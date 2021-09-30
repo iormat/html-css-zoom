@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ZoomCall Layout</title>
 </head>
@@ -12,20 +13,41 @@
     <!-- intestazione -->
     <header>
         <!-- qui il layout di finestra -->
+        <div id="win-btns">
+            <button class="close">  </button>
+            <button class="minimize">  </button>
+            <button class="maximize">  </button>
+        </div>
+
+        <div id="zoom-id">
+            <h5> Zoom Meeting ID:</h5>
+        </div>
+
+        <div></div>
     </header>
     <!-- parte centrale -->
     <main>
-        <section>
-            <!-- qui va la "sidebar" sinistra -->
-        </section>
+        <div class="flex-container">
+            <section class="sidebar sx flex-container">
+                <!-- qui va la "sidebar" sinistra -->
+                <span>questo è un testo di prova</span> <!--debug-->
+                <i class="fas fa-caret-square-left"></i>
+            </section>
+    
+            <section id="zoomers">
+                <!-- qui va l'anterpima delle persone in meeting -->
+                <div class="single">
+                    <img src="img/Active-Speaker-Zoom-Call.jpeg" alt="">
+                </div>
+            </section>
+    
+            <section class="sidebar dx flex-container">
+                <!-- qui va la "sidebar" destra -->
+                <span>questo è un testo di prova</span> <!--debug-->
+                <i class="fas fa-caret-square-left"></i>
 
-        <section>
-            <!-- qui va l'anterpima delle persone in meeting -->
-        </section>
-
-        <section>
-            <!-- qui va la "sidebar" destra -->
-        </section>
+            </section>            
+        </div>
     </main>
 
     <!-- navigazione finale -->

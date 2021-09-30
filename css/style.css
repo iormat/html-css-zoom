@@ -4,3 +4,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #000;
+    font-size: 20px;
+
+}
+
+/* header rules */
+header {
+    padding-left: 10px;
+    height: 30px;
+    border: 1px solid #d8d6d6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* debug */
+    background-color: #DFDEDE;
+}
+
+#win-btns button{
+    border: transparent;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.close {
+    background-color: #ED6B60;
+}
+
+.minimize {
+    background-color: #F5BF4F;
+}
+
+.maximize {
+    background-color: #62C756;
+}
+
+/* main rules */
+.flex-container {
+    display: flex;
+    /* debug */
+    /* margin: 50px; */
+}
+
+.sidebar {
+    /* debug */
+    color: white;
+}
+
+.sidebar.flex-container {
+    flex-direction: column;
+}
+
+#zoomers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#zoomers .single {
+    width: 300px;
+}
+#zoomers .single img{
+    width: 100%;
+}
+
+.fas {
+    font-weight: 900;
+    font-size: "Font Awesome 5 Free";
+}
