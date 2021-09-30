@@ -8,7 +8,7 @@
 body {
     background-color: #000;
     font-size: 20px;
-
+    height: calc(100vh - 30px);
 }
 
 /* header rules */
@@ -45,35 +45,37 @@ header {
 }
 
 /* main rules */
-.flex-container {
+.flex-container, .flex-side {
     display: flex;
-    /* debug */
-    /* margin: 50px; */
-}
-
-.sidebar {
-    /* debug */
-    color: white;
-}
-
-.sidebar.flex-container {
-    flex-direction: column;
-}
-
-#zoomers {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-#zoomers .single {
-    width: 300px;
+.sidebar.flex-side {
+    justify-content: center;
+    flex-flow: column nowrap;
+    font-size: 100px;
 }
-#zoomers .single img{
-    width: 100%;
+#zoomers.flex-middle{
+    flex-flow: row wrap;
+
+}
+
+#zoomers .single {
+    width: 150px;
+    height: 100px;
+}
+
+#zoomers img {
+    max-width: 100%;
+}
+
+
+span {
+    background-color: white;
 }
 
 .fas {
+    color: #fff;
     font-weight: 900;
     font-size: "Font Awesome 5 Free";
 }
