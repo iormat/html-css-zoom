@@ -8,7 +8,6 @@
 body {
     background-color: #000;
     font-size: 20px;
-    height: calc(100vh - 30px);
 }
 
 /* header rules */
@@ -45,28 +44,34 @@ header {
 }
 
 /* main rules */
-.flex-container, .flex-side {
+.flex-container, .flex-side, .flex-middle {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .sidebar.flex-side {
+    padding: 30px;
     justify-content: center;
     flex-flow: column nowrap;
-    font-size: 100px;
+    align-items: center;
+    font-size: 3rem;
 }
 #zoomers.flex-middle{
+    height: calc(100vh - 30px);
+    padding: 50px;
+    min-width: 50%;
     flex-flow: row wrap;
-
+    overflow: scroll;
+    max-height: 100%;
 }
 
 #zoomers .single {
-    width: 150px;
-    height: 100px;
+    width: calc(100% / 5);
+    padding: 5px;
 }
 
 #zoomers img {
-    max-width: 100%;
+    width: 100%;
+    min-width: 170px;
 }
 
 
